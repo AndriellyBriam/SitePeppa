@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html  lang ="pt-br" >
-<head >
-    <meta  charset =" UTF-8 " >
+<html lang="pt-br">
+
+<head>
+    <meta charset=" UTF-8 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta  name =" viewport " content =" largura=largura do dispositivo, escala inicial=1.0 " >
-    <title >Concertar o telhado</title >
+    <meta name=" viewport " content=" largura=largura do dispositivo, escala inicial=1.0 ">
+    <title>Concertar o telhado</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-</head >
+</head>
+
 <body>
     <h1>Menu</h1>
-        <h2><a href="index.html" rel="prev">Pagina Inicial</a></h2>
-        <h2><a href="minhas.html">Minhas Opiniões</a></h2>
-        <h2><a href="deumacrianca.html">Opinião uma criança</a></h2>
-        <h2><a href="episodios.html">Episódios</a></h2>
-            <h3><a href="naNetflix.html">Na Netflix</a></h3>
-            <h3><a href="noDisneyPlus.html">No Disney Plus</a></h3>
-            <h3><a href="noPrime.html">No Prime Video</a></h3>
-        <h2><a href="galeria.html" rel="next">Galeria</a></h2>
-        <h2><a href="faleconosco.html">Fale Conosco</a></h2>
-        
-        <form>
+    <h2><a href="index.html" rel="prev">Pagina Inicial</a></h2>
+    <h2><a href="minhas.html">Minhas Opiniões</a></h2>
+    <h2><a href="deumacrianca.html">Opinião uma criança</a></h2>
+    <h2><a href="episodios.html">Episódios</a></h2>
+    <h3><a href="naNetflix.html">Na Netflix</a></h3>
+    <h3><a href="noDisneyPlus.html">No Disney Plus</a></h3>
+    <h3><a href="noPrime.html">No Prime Video</a></h3>
+    <h2><a href="galeria.html" rel="next">Galeria</a></h2>
+    <h2><a href="faleconosco.html">Fale Conosco</a></h2>
 
-            <fieldset> 
+    <form>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0Tg8CpWGfgw?start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <fieldset>
 
-                <legend>Cadastre para ajudar a consertar o telhado da escola</legend>
+            <legend>Cadastre para ajudar a consertar o telhado da escola</legend>
 
-                <p><input type="radio" name="nmaior" id="idmaior"><label for="maior">Sou pai ou responsável</label></p>
+            <p><input type="radio" name="nmaior" id="idmaior"><label for="maior">Sou pai ou responsável</label></p>
 
-               <p><input type="radio" name="nmenor" id="idmenor"><label for="fmenor">Sou aluno</label></p>
+            <p><input type="radio" name="nmenor" id="idmenor"><label for="fmenor">Sou aluno</label></p>
 
-      
 
-            </fieldset>
 
-            <fieldset>
+        </fieldset>
+    
+        <fieldset>
 
-                <legend>Cadastro</legend>
+            <legend>Cadastro</legend>
 
-                <p><label for="idNome">Nome:</label><input type="text" name="nNome" id="idNome" size="40" placeholder="Nome Completo"></p>
-<p><label for="idNasc">Data de nascimento:</label><input type="date" name="nNascimento" id="idNasc"></p>
-
-< p > < label  for =" idSenha " > Senha(matricula do aluno):</ label > < input  type =" password " name =" nSenha " id =" idSenha "</label> </ p >
+            <p><label for="idNome">Nome:</label><input type="text" name="nNome" id="idNome" size="40"
+                    placeholder="Nome Completo"></p>
+            <p><label for="idNasc">Data de nascimento:</label><input type="date" name="nNascimento" id="idNasc"></p>
+            <p><label for="idcSenha"> Senha(matricula do aluno):</label><input type="password" name="ncSenha" id="idcSenha"></p>
                 <p><label for="idNasc">Data de nascimento:</label><input type="date" name="nNascimento" id="idNasc"></p>
 
-                <p><label for="idEmail">email:</label><input type="email" name="nEmail" id="idEmail" placeholder="exemplo@gmail.com"></p>
+                <p><label for="idEmail">email:</label><input type="email" name="nEmail" id="idEmail"
+                        placeholder="exemplo@gmail.com"></p>
 
 
-                <p><label for="num">Valor da doaçã=o:</label><input type="number" min="0" max="1000000" placeholder="">Digite numero sem os centavos</p>
+                <p><label for="num">Valor da doação:</label><input type="number" min="0" max="1000000"
+                        placeholder="Digite numero sem os centavos"></p>
 
                 <legend>Forma de pagamento</legend>
 
@@ -60,17 +64,16 @@
                     <option value="c">Cartão</option>
 
                     <option value="b">Boquete</option>
-
-                    <option 
-< label > Sugestões para pedreiros</ label > < br > < tipo de entrada  =" intervalo " min =" 1 " max =" 10 " >
-            < label > </ label > < br > < textarea  type =" text " cols =" 50 " rows =" 10 " placeholder =" Digite aqui a sua sugestão 
-" > </ textarea > < br >
-        </ fieldset >
-       
                 </select>
+                <br>
+        <fieldset>
+            <legend>Sugestões para pedreiros:</legend>
+            <p><label></label><textarea type="text" cols="70" rows="5" placeholder="Sugestões para pedreiros"></textarea></p>
+        </fieldset>
+        </fieldset>
 
-            </fieldset>
+       
+    </form>
+</body>
 
-        </form>
-   </body>
 </html>
