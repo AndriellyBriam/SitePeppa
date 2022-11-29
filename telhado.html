@@ -27,12 +27,13 @@
         <fieldset>
 
             <legend>Cadastre para ajudar a consertar o telhado da escola</legend>
-
-            <p><input type="radio" name="nmaior" id="idmaior"><label for="maior">Sou pai ou responsável</label></p>
-
-            <p><input type="radio" name="nmenor" id="idmenor"><label for="fmenor">Sou aluno</label></p>
-
-
+                
+            <label>Quem é você?</label>
+            <br>
+            <input type="radio" name="quem" id="idPai"><label for="idPai">Sou pai/mãe ou responsável</label>
+            <br>
+            <input type="radio" name="quem" id="idAul"><label for="idAul">Sou aluno</label>
+            <br>
 
         </fieldset>
     
@@ -44,32 +45,32 @@
                     placeholder="Nome Completo"></p>
             <p><label for="idNasc">Data de nascimento:</label><input type="date" name="nNascimento" id="idNasc"></p>
             <p><label for="idcSenha"> Senha(matricula do aluno):</label><input type="password" name="ncSenha" id="idcSenha"></p>
-                <p><label for="idNasc">Data de nascimento:</label><input type="date" name="nNascimento" id="idNasc"></p>
+              
 
                 <p><label for="idEmail">email:</label><input type="email" name="nEmail" id="idEmail"
                         placeholder="exemplo@gmail.com"></p>
 
 
-                <p><label for="num">Valor da doação:</label><input type="number" min="0" max="1000000"
-                        placeholder="Digite numero sem os centavos"></p>
+                <p><label for="idNum">Valor da doação:</label><input type="num" min="0" max="1000000" name="nValor" id="idNum"
+                        placeholder="Numero inteiro"></p>
 
-                <legend>Forma de pagamento</legend>
+                <label for="idopt">Forma de pagamento:</label>
+                <select name="opt" id="idopt">
 
-                <select name="opt">
+                    <option value="d">Dinheiro</option>
 
-                    <option value="d">dinheiro</option>
-
-                    <option value="p">pix</option>
+                    <option value="p">Pix</option>
 
                     <option value="c">Cartão</option>
 
                     <option value="b">Boquete</option>
+
+                    <option value="x">Xerecard</option>
                 </select>
                 <br>
-        <fieldset>
-            <legend>Sugestões para pedreiros:</legend>
-            <p><label></label><textarea type="text" cols="70" rows="5" placeholder="Sugestões para pedreiros"></textarea></p>
-        </fieldset>
+
+            <p><label for="idSug">Sugestões para pedreiros:</label><br><textarea type="text" cols="70" rows="5" name="nSugestao" id="idSug" placeholder="Sugestões para pedreiros"></textarea></p>
+        
         </fieldset>
 
        
